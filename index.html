@@ -3,27 +3,31 @@
 <head>
     <title>Event Registration Form</title>
 </head>
-<body>
-
-<h2>Event Registration Form</h2>
-<h2> welcome to event</h2>
+<body style="font-family: Arial; background-color: #f2f2f2;">
+<h2 style="text-align: center; color: blue;">Event Registration Form </h2>
+<h2 style="text-align: center; color: green;" welcome to event</h2>
 <form action="success.html" method="GET">
+style="background-color: white; width: 400px; margin: auto; padding: 20px; border-radius: 10px;">
 
-    Name:
+    <label>Name:</label>
     <input type="text" name="username" required>
+    style="width: 95%; padding: 8px;">
     <br><br>
 
-    Mobile:
-    <input type="text" name="mobile" required>
+    <label>Mobile:</label>
+    <input type="tel" name="mobile"  placeholder="Enter mobile number" required
+         style="width: 95%; padding: 8px;">
     <br><br>
 
-    Gender:
+    <label>Gender:</label><br>
     <input type="radio" name="gender" value="Male" required> Male
     <input type="radio" name="gender" value="Female"> Female
     <br><br>
 
-    Department:
+    <label>Department:</label>
     <select name="department" required>
+        style="width: 100%; padding: 8px;">
+        <option value="">Select Department</option>
         <option value="CSE">CSE</option>
         <option value="ECE">ECE</option>
         <option value="EEE">EEE</option>
@@ -33,9 +37,13 @@
     <br><br>
 
     <input type="submit" value="Register">
+     style="background-color: blue; color: white; padding: 10px 20px;
+                  border: none; border-radius: 5px; cursor: pointer;">
 
 </form>
-<p> thank you for filling </p>
+<p> style="text-align: center; color: gray;">
+    thank you for filling the form
+</p>
 
 </body>
 </html>
