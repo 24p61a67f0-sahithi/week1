@@ -2,14 +2,54 @@
 <html>
 <head>
     <title>Event Registration Form</title>
+<style>
+   body  {
+        font-family: Arial;
+            background-color: lightblue;
+        }
+
+h2 {
+            text-align: center;
+            color: darkblue;
+        }
+    form {
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid darkblue;
+            border-radius: 10px;
+        }
+    input[type="text"] {
+            padding: 8px;
+            width: 95%;
+        }
+      select {
+            padding: 8px;
+            width: 100%;
+        }
+
+   
+        input[type="submit"] {
+            background-color: darkblue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+      p {
+            text-align: center;
+            color: darkgreen;
+        }
+    </style>
 </head>
-<body>
+   <body>
+       <h2>Event Registration Form</h2>
 
-<h2>Event Registration Form</h2>
-<h2> welcome to event</h2>
+<h2>Welcome to Event</h2>
+
 <form action="success.html" method="GET">
-
-    Name:
+     Name:
     <input type="text" name="username" required>
     <br><br>
 
@@ -21,8 +61,7 @@
     <input type="radio" name="gender" value="Male" required> Male
     <input type="radio" name="gender" value="Female"> Female
     <br><br>
-
-    Department:
+ Department:
     <select name="department" required>
         <option value="CSE">CSE</option>
         <option value="ECE">ECE</option>
@@ -35,7 +74,8 @@
     <input type="submit" value="Register">
 
 </form>
-<p> thank you for filling </p>
+
+<p>Thank you for filling</p>
 
 </body>
 </html>
